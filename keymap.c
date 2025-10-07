@@ -18,6 +18,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
+enum {
+  TD_ALT_GUI = 0
+};
+
+tap_dance_action_t tap_dance_actions[] = {
+  [TD_ALT_GUI] = ACTION_TAP_DANCE_DOUBLE(KC_LALT, KC_LGUI)
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3_ex2(
   //,--------------------------------------------------------------|  |--------------------------------------------------------------.
@@ -27,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            MO(2), KC_LALT,  KC_ENT,     KC_SPC,   MO(1), KC_RGUI
+                                     MO(2), TD(TD_ALT_GUI),  KC_ENT,     KC_SPC,   MO(1), KC_RGUI
                                       //`--------------------------'  `--------------------------'
 
   ),
