@@ -66,11 +66,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [3] = LAYOUT_split_3x6_3_ex2(
   //,   -----------------------------------------------------------------------------|  |-----------------------------------------------------------------------------------.
-      QK_BOOT,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,       XXXXXXX,    MS_WHLL,    MS_WHLD,    MS_WHLU,    MS_WHLR,    XXXXXXX,    XXXXXXX,
+      XXXXXXX,    MS_ACL0,    MS_ACL1,    MS_ACL2,    XXXXXXX,    XXXXXXX,    XXXXXXX,       XXXXXXX,    MS_WHLL,    MS_WHLD,    MS_WHLU,    MS_WHLR,    XXXXXXX,    XXXXXXX,
   //|--------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-      RM_TOGG,    RM_HUEU,    RM_SATU,    RM_VALU,    MS_BTN1,    XXXXXXX,    XXXXXXX,       XXXXXXX,    MS_LEFT,    MS_DOWN,      MS_UP,    MS_RGHT,    XXXXXXX,    XXXXXXX,
+      XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,       XXXXXXX,    MS_LEFT,    MS_DOWN,      MS_UP,    MS_RGHT,    XXXXXXX,    XXXXXXX,
   //|--------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-      RM_NEXT,    RM_HUED,    RM_SATD,    RM_VALD,    XXXXXXX,    XXXXXXX,                               MS_BTN3,    MS_BTN1,    MS_BTN2,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+      XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    MS_BTN1,    XXXXXXX,                               MS_BTN3,    MS_BTN1,    MS_BTN2,    XXXXXXX,    XXXXXXX,    XXXXXXX,
   //|--------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
                                                       KC_LGUI,    KC_LALT,     KC_ENT,        KC_SPC,    _______,      TG(3)
                                       //`--------------------------------------------'  `-----------------------------------------------'
@@ -80,9 +80,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,   -----------------------------------------------------------------------------|  |-----------------------------------------------------------------------------------.
         KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,    XXXXXXX,         TG(4),      KC_F7,      KC_F8,      KC_F9,     KC_F10,     KC_F11,     KC_F12,
   //|--------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-      XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,       XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+      RM_TOGG,    RM_HUEU,    RM_SATU,    RM_VALU,    XXXXXXX,    XXXXXXX,    XXXXXXX,       XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
   //|--------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-      XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                               XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
+      RM_NEXT,    RM_HUED,    RM_SATD,    RM_VALD,    XXXXXXX,    XXXXXXX,                               XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
   //|--------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
                                                       KC_LGUI,    KC_LALT,     KC_ENT,        KC_SPC,    _______,    KC_RALT
                                       //`--------------------------------------------'  `-----------------------------------------------'
